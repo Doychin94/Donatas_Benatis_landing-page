@@ -1,0 +1,21 @@
+/* ------------------------------------------------------------ *\
+	box
+\* ------------------------------------------------------------ */
+
+.box {
+	font-size: 1.5rem;
+	line-height: 1.466;
+	background-color: var(--c-background-secondary);
+	border-radius: 2.4rem;
+	border: 0.1rem solid #ffffff33;
+	padding: 3.2rem 2.4rem;
+
+	.box__image {
+		display: inline-block;
+		margin-bottom: 1.2rem;
+	}
+
+	h4 {
+		margin-bottom: 0.8rem;
+	}
+}

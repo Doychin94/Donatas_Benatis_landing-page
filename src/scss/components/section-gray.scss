@@ -1,0 +1,26 @@
+/* ------------------------------------------------------------ *\
+	section-gray
+\* ------------------------------------------------------------ */
+
+.section-gray {
+	.section__inner {
+		padding: 8.8rem 2rem 10.4rem;
+		background-color: var(--c-background-secondary);
+		border-radius: 2.4rem;
+	}
+
+	.section__head {
+		max-width: 59.8rem;
+		margin: 0 auto 4.8rem;
+		text-align: center;
+	}
+
+	.section__list-features {
+		margin-bottom: 1.6rem;
+	}
+
+	.section__body {
+		max-width: 121.6rem;
+		margin: 0 auto;
+	}
+}
