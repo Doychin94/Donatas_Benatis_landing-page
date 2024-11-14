@@ -1,0 +1,29 @@
+/* ------------------------------------------------------------ *\
+	counter
+\* ------------------------------------------------------------ */
+
+.counter {
+	display: flex;
+	align-items: center;
+	gap: 3.2rem;
+
+	.counter__aside {
+		position: relative;
+	}
+
+	.counter__aside img {
+		position: absolute;
+		top: -7rem;
+		right: 11rem;
+	}
+
+	.counter__aside h4 {
+		position: relative;
+	}
+
+	.counter__aside h4 img {
+		position: absolute;
+		top: calc(100% + 0.1rem);
+		right: 0;
+	}
+}

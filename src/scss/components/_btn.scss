@@ -6,12 +6,23 @@
 	display: inline-flex;
 	vertical-align: middle;
 	align-items: center;
+	gap: 2rem;
 	justify-content: center;
 	cursor: pointer;
 	text-decoration: none;
 	appearance: none;
-}
+	background-color: var(--c-green);
+	padding: 0.8rem 0.8rem 0.8rem 3.2rem;
+	font-weight: 600;
+	font-size: 1.7rem;
+	color: #1b1b1b;
+	border-radius: 3.2rem;
+	transition: background-color var(--t-duration) ease-in-out;
 
+	&:hover {
+		background-color: var(--c-yellow);
+	}
+}
 
 // Btn block
 .btn--block {

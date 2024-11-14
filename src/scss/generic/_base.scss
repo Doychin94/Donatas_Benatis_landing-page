@@ -12,7 +12,8 @@ body {
 	font-weight: var(--fw-base);
 	font-size: var(--fz-base);
 	line-height: var(--lh-base);
-	color: var(--c-gray);
+	color: var(--c-base);
+	background-color: var(--c-background);
 }
 
 a {

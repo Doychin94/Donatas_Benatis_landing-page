@@ -2,6 +2,91 @@
 <html lang="en">
 {{> head }}
 <body>
+	{{> header }}
+
+	<section class="hero">
+		<figure class="hero__background">
+			<picture>
+				<source media="(min-width:767px)" srcset="assets/images/svg/hero-background.svg">
+
+				<img src="assets/images/svg/hero-background-mobile.svg" alt="">
+			</picture>
+		</figure><!-- /.hero__background -->
+
+		<div class="shell shell--small hero__shell">
+			<div class="hero__content">
+				<h1>
+					Is Your Store Ready? Download the
+
+					<span>
+						Checklist
+
+						<img src="assets/images/svg/label.svg" alt="" width="126" height="52">
+					</span>
+				</h1>
+
+				<div class="hero__entry">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisc elit, sed do eiusmod tempor amet cut incididunt.</p>
+				</div><!-- /.hero__entry -->
+
+				<div class="hero__actions">
+					<a href="#" class="btn">
+						Grab Yours Here
+
+						<img src="assets/images/svg/arrow.svg" alt="" width="32" height="32">
+					</a>
+				</div><!-- /.hero__actions -->
+
+				<div class="counter hero__counter">
+					<div class="counter__inner">
+						<ul class="list-counters">
+							<li>
+								<strong>10</strong>
+
+								<span>days</span>
+							</li>
+
+							<li>
+								<strong>5</strong>
+
+								<span>hours</span>
+							</li>
+
+							<li>
+								<strong>35</strong>
+
+								<span>minutes</span>
+							</li>
+
+							<li>
+								<strong>15</strong>
+
+								<span>seconds</span>
+							</li>
+						</ul>
+					</div><!-- /.counter__inner -->
+
+					<div class="counter__aside">
+						<img src="assets/images/svg/arrow-2.svg" alt="">
+
+						<h4>
+							Before <br> Black Friday
+
+							<img src="assets/images/svg/underline.svg" alt="" width="90" height="12">
+						</h4>
+					</div><!-- /.counter__aside -->
+				</div><!-- /.counter hero__counter -->
+			</div><!-- /.hero__content -->
+
+			<figure class="hero__image">
+				<picture>
+					<source media="(min-width:767px)" width="500" height="680" srcset="assets/images/temp/hero-img1.png">
+
+					<img src="assets/images/temp/hero-mobile-img1.png" alt="" width="353" height="432">
+				</picture>
+			</figure><!-- /.hero__image -->
+		</div><!-- /.shell -->
+	</section><!-- /.hero -->
 
 	{{> footer }}
 
