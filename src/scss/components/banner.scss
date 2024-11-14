@@ -1,0 +1,71 @@
+/* ------------------------------------------------------------ *\
+	banner
+\* ------------------------------------------------------------ */
+
+.banner {
+	position: relative;
+	isolation: isolate;
+	background-color: var(--c-blue);
+	border-radius: 2.4rem;
+	padding: 6.4rem 10rem 7.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	font-size: 2.4rem;
+	line-height: 1.33;
+	isolation: isolate;
+
+	.banner__decoration {
+		position: absolute;
+		left: 0;
+		top: 1rem;
+		z-index: -1;
+	}
+
+	// .banner__decoration adjust
+	.banner__decoration--adjust {
+		top: unset;
+		left: 37%;
+		bottom: -4rem;
+	}
+
+	// .banner__decoration centered
+	.banner__decoration--centered {
+		top: -9rem;
+		left: 42%;
+	}
+
+	// .banner__decoration right
+	.banner__decoration--right {
+		top: unset;
+		left: unset;
+		right: 3rem;
+		bottom: -1rem;
+	}
+
+	.banner__content h2 {
+		margin-bottom: 1.6rem;
+	}
+
+	.banner__aside {
+		display: flex;
+		align-items: center;
+		gap: 2.4rem;
+	}
+
+	.banner__price {
+		font-family: var(--ff-funnel-display);
+		font-size: 8rem;
+		line-height: 1.1;
+		color: var(--c-white);
+		font-weight: 600;
+	}
+
+	.banner__discount {
+		font-family: var(--ff-funnel-display);
+		font-size: 4.8rem;
+		line-height: 1.166;
+		text-decoration: line-through;
+	}
+}
