@@ -4,11 +4,19 @@
 
 :root {
 	--fz-html: 62.5%;
-	--fz-base: 2rem;
+	--fz-base: 1.6rem;
 	--fw-base: 400;
-	--lh-base: 1.6;
-	--ff-base: 'Mont', Helvetica, Arial, sans-serif;
-	--c-base: #141414;
+	--lh-base: 1.5;
+	--ff-base: 'Poppins', serif;
+	--ff-funnel-display: 'Funnel Display', sans-serif;
+	--c-base: #ffffffb3;
+	--c-white: #fff;
+	--c-background: #1b1b1b;
+	--c-background-secondary: #242424;
+	--c-green: #67c794;
+	--c-red: #582525;
+	--c-yellow: #feee91;
+	--c-blue: #205057;
 }
 
 $breakpoints: (

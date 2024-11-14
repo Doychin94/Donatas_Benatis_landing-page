@@ -1,7 +1,7 @@
 {
 	"type": "html",
-	"client_name": "Julian",
-	"project_name": "OpenFlake - Front-End Only",
+	"client_name": "Donatas Benaitis",
+	"project_name": "Donatas Benaitis landing page",
 	"exclude_from_client_archive": [
 		"settings.json",
 		"node_modules"
