@@ -1,0 +1,36 @@
+/* ------------------------------------------------------------ *\
+	section-media
+\* ------------------------------------------------------------ */
+
+.section-media {
+	padding: 2rem 0 0;
+	overflow: hidden;
+
+	.section__inner {
+		max-width: 92rem;
+		margin: 0 auto;
+	}
+
+	.section__content {
+		position: relative;
+		isolation: isolate;
+	}
+
+	.section__decoration {
+		position: absolute;
+		right: calc(100% - 2rem);
+		top: 15rem;
+		z-index: -1;
+	}
+
+	.section__decoration--adjust {
+		left: calc(100% - 3rem);
+		right: unset;
+		top: 40rem;
+	}
+
+	.section__title {
+		text-align: center;
+		margin-bottom: 4.8rem;
+	}
+}
