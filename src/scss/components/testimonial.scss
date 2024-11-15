@@ -11,6 +11,7 @@
 	padding: 2.4rem 3.2rem;
 	color: var(--c-white);
 	font-weight: 500;
+	background-color: var(--c-background-secondary);
 
 	.testimonial__bar {
 		display: flex;
@@ -29,7 +30,15 @@
 		display: block;
 		font-size: 2rem;
 		line-height: 1.4;
-		margin-bottom: 0.6rem;
+		margin-bottom: 0.4rem;
 		color: var(--c-white);
+		font-weight: 600;
+		font-family: var(--ff-funnel-display);
+	}
+
+	blockquote {
+		font-size: 1.6rem;
+		list-style: 1.5;
+		margin-bottom: 1.8rem;
 	}
 }

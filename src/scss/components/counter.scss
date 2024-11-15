@@ -13,8 +13,8 @@
 
 	.counter__aside img {
 		position: absolute;
-		top: -7rem;
-		right: 11rem;
+		top: -7.8rem;
+		right: 10.2rem;
 	}
 
 	.counter__aside h4 {
@@ -23,7 +23,7 @@
 
 	.counter__aside h4 img {
 		position: absolute;
-		top: calc(100% + 0.1rem);
-		right: 0;
+		top: calc(100% - 0.1rem);
+		right: -1.4rem;
 	}
 }

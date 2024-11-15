@@ -9,6 +9,7 @@
 	border-radius: 2.4rem;
 	border: 0.1rem solid #ffffff33;
 	padding: 2.4rem 3.2rem;
+	background-color: #ffffff0a;
 
 	.box__image {
 		display: inline-block;
@@ -25,4 +26,10 @@
 		gap: 1.2rem;
 		margin-bottom: 0.8rem;
 	}
+}
+
+// box adjust
+.box--adjust {
+	font-size: 1.6rem;
+	text-wrap: balance;
 }
