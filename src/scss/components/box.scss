@@ -15,7 +15,14 @@
 		margin-bottom: 1.2rem;
 	}
 
-	h4 {
+	h4:not(:last-child) {
+		margin-bottom: 0.8rem;
+	}
+
+	.box__bar {
+		display: flex;
+		align-items: center;
+		gap: 1.2rem;
 		margin-bottom: 0.8rem;
 	}
 }

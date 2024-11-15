@@ -1,0 +1,45 @@
+/* ------------------------------------------------------------ *\
+	cta
+\* ------------------------------------------------------------ */
+
+.cta {
+	position: relative;
+	isolation: isolate;
+	background-color: var(--c-blue);
+	border-radius: 2.4rem;
+	padding: 5.6rem 9.2rem 6.4rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 2rem;
+	font-size: 2rem;
+	line-height: 1.4;
+	isolation: isolate;
+
+	.cta__decoration {
+		position: absolute;
+		top: 0;
+		left: 53%;
+		transform: translateX(-50%);
+		z-index: -1;
+	}
+
+	.cta__content {
+		width: 100%;
+		max-width: 58.2rem;
+	}
+
+	.cta__aside {
+		width: 100%;
+		max-width: 44rem;
+	}
+
+	h3 img {
+		display: inline-block;
+		margin-right: 1.6rem;
+	}
+
+	.cta__entry {
+		margin-bottom: 2.4rem;
+	}
+}
