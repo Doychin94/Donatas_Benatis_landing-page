@@ -7,6 +7,10 @@
 	align-items: center;
 	gap: 3.2rem;
 
+	@include breakpoint-down(tablet) {
+		flex-direction: column-reverse;
+	}
+
 	.counter__aside {
 		position: relative;
 	}

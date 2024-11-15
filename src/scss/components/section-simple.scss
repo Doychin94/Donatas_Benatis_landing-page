@@ -4,9 +4,17 @@
 
 .section-simple {
 	padding: 10rem 0;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 8rem 0;
+	}
 }
 
 // section simple adjust
 .section-simple--adjust {
 	padding: 12rem 0 7.7rem;
+
+	@include breakpoint-down(small-desktop) {
+		padding: 10rem 0 6rem;
+	}
 }
