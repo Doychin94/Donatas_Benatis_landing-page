@@ -16,6 +16,10 @@
 	line-height: 1.33;
 	isolation: isolate;
 
+	@include breakpoint-down(small-desktop) {
+		padding: 6.4rem 5rem 7.4rem;
+	}
+
 	.banner__decoration {
 		position: absolute;
 		left: 0;

@@ -19,6 +19,10 @@
 
 	.counter__aside h4 {
 		position: relative;
+
+		@include breakpoint-down(small-desktop) {
+			display: inline;
+		}
 	}
 
 	.counter__aside h4 img {

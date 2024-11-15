@@ -11,8 +11,11 @@
 		position: absolute;
 		left: 0;
 		top: 0;
-		// width: calc(100% - 50rem);
 		width: 100%;
+
+		@media (max-width: 1300px) {
+			width: calc(100% - 12rem);
+		}
 	}
 
 	.hero__background img {
@@ -41,6 +44,7 @@
 		position: relative;
 		margin-bottom: 2rem;
 		isolation: isolate;
+		text-wrap: balance;
 	}
 
 	h1 span {
@@ -53,6 +57,12 @@
 		right: 2.6rem;
 		top: calc(100% - 3.4rem);
 		z-index: -1;
+
+		@media (max-width: 1318px) {
+			top: calc(100% - 3rem);
+			right: -2rem;
+			width: 100px;
+		}
 	}
 
 	.hero__entry {
@@ -68,10 +78,14 @@
 	.hero__image {
 		width: 100%;
 		max-width: 50rem;
-		margin-right: calc(-50vw + 63.9rem);
+		margin-right: calc(-50vw + 63.2rem);
 
 		@media (max-width: 1270px) {
 			margin-right: 0;
+		}
+
+		@include breakpoint-down(small-desktop) {
+			// max-width: 40rem;
 		}
 	}
 
@@ -79,5 +93,10 @@
 		width: 100%;
 		height: auto;
 		object-fit: cover;
+
+		@include breakpoint-down(small-desktop) {
+			height: 100%;
+			object-fit: fill;
+		}
 	}
 }
