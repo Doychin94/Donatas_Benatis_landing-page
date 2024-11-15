@@ -21,13 +21,23 @@
 		position: absolute;
 		right: calc(100% - 16.2rem);
 		top: 6.5%;
+		width: 37vw;
 		z-index: -1;
+
+		@include breakpoint-down(large-desktop) {
+			width: auto;
+		}
 	}
 
 	.section__decoration--adjust {
 		left: calc(100% - 5rem);
 		right: unset;
 		top: 28%;
+		width: 30vw;
+
+		@include breakpoint-down(large-desktop) {
+			width: auto;
+		}
 	}
 
 	.section__title {

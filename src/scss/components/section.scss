@@ -24,7 +24,7 @@
 	.section__image {
 		flex: 0 0 73rem;
 		max-width: 73rem;
-		margin-left: calc(-50vw + 63.9rem);
+		margin-left: calc(-50vw + 62.8rem);
 
 		@media (max-width: 1270px) {
 			margin-left: 0;
@@ -39,8 +39,14 @@
 
 	.section__content {
 		flex: 1 1 auto;
-		max-width: 63.6rem;
+		max-width: 70rem;
 		margin-top: -1.5rem;
+		margin-right: -5vw;
+
+		@include breakpoint-down(large-desktop) {
+			max-width: 63.6rem;
+			margin-right: 0;
+		}
 	}
 
 	h2 {
