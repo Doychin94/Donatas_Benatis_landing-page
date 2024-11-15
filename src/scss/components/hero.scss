@@ -11,11 +11,17 @@
 		padding: 12rem 0 2rem;
 	}
 
+	@include breakpoint-down(mobile) {
+		font-size: 1.6rem;
+		line-height: 1.5;
+	}
+
 	.hero__background {
 		position: absolute;
 		left: 0;
 		top: 0;
 		width: 100%;
+		pointer-events: none;
 
 		@media (max-width: 1300px) {
 			width: calc(100% - 12rem);
@@ -31,6 +37,10 @@
 		width: 100%;
 		height: auto;
 		object-fit: cover;
+
+		@include breakpoint-down(mobile) {
+			height: unset;
+		}
 	}
 
 	.hero__shell {
@@ -58,6 +68,10 @@
 			text-align: center;
 			margin-bottom: 7rem;
 		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 2.4rem;
+		}
 	}
 
 	h1 {
@@ -65,11 +79,20 @@
 		margin-bottom: 2rem;
 		isolation: isolate;
 		text-wrap: balance;
+
+		@include breakpoint-down(mobile-medium) {
+			max-width: 44.3rem;
+			margin: 0 auto 2rem;
+		}
 	}
 
 	h1 span {
 		position: relative;
 		isolation: isolate;
+
+		@include breakpoint-down(mobile-medium) {
+			position: static;
+		}
 	}
 
 	h1 img {
@@ -81,7 +104,13 @@
 		@media (max-width: 1318px) {
 			top: calc(100% - 3rem);
 			right: -2rem;
-			width: 100px;
+			width: 10rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			width: 8.5rem;
+			top: calc(100% - 11.4rem);
+			right: 3rem;
 		}
 	}
 
@@ -99,6 +128,10 @@
 
 	.hero__actions {
 		margin-bottom: 5.6rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 5.3rem;
+		}
 	}
 
 	.hero__counter {
@@ -121,6 +154,10 @@
 			position: relative;
 			left: -4rem;
 			z-index: -1;
+		}
+
+		@include breakpoint-down(mobile) {
+			left: 0;
 		}
 	}
 

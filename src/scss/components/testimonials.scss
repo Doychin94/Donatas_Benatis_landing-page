@@ -11,4 +11,8 @@
 	@include breakpoint-down(tablet) {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	@include breakpoint-down(mobile) {
+		grid-template-columns: repeat(1, 1fr);
+	}
 }

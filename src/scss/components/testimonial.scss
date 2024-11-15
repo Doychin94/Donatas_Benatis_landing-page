@@ -13,11 +13,19 @@
 	font-weight: 500;
 	background-color: var(--c-background-secondary);
 
+	@include breakpoint-down(mobile) {
+		text-align: center;
+	}
+
 	.testimonial__bar {
 		display: flex;
 		align-items: center;
 		gap: 2rem;
 		margin-bottom: 2.8rem;
+
+		@include breakpoint-down(mobile) {
+			justify-content: center;
+		}
 	}
 
 	.testimonial__bar-content {
@@ -40,5 +48,15 @@
 		font-size: 1.6rem;
 		list-style: 1.5;
 		margin-bottom: 1.8rem;
+
+		@include breakpoint-down(mobile) {
+			text-wrap: balance;
+		}
+	}
+
+	.rating {
+		@include breakpoint-down(mobile) {
+			justify-content: center;
+		}
 	}
 }

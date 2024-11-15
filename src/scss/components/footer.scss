@@ -6,4 +6,8 @@
 	padding: 3.2rem 0;
 	background-color: var(--c-background-secondary);
 	text-align: center;
+
+	@include breakpoint-down(mobile) {
+		padding: 2.8rem 0;
+	}
 }

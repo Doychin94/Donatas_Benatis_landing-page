@@ -11,9 +11,17 @@
 	padding: 2.4rem 3.2rem;
 	background-color: #ffffff0a;
 
+	@include breakpoint-down(mobile) {
+		padding: 2rem 2.4rem;
+	}
+
 	.box__image {
 		display: inline-block;
 		margin-bottom: 1.2rem;
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 0;
+		}
 	}
 
 	h4:not(:last-child) {
@@ -21,10 +29,14 @@
 	}
 
 	.box__bar {
-		display: flex;
+		display: contents;
 		align-items: center;
 		gap: 1.2rem;
 		margin-bottom: 0.8rem;
+
+		@include breakpoint-down(mobile) {
+			display: flex;
+		}
 	}
 }
 
@@ -32,4 +44,20 @@
 .box--adjust {
 	font-size: 1.6rem;
 	text-wrap: balance;
+
+	@include breakpoint-down(mobile) {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	.box__bar {
+		display: flex;
+		align-items: center;
+		gap: 1.2rem;
+		margin-bottom: 0.8rem;
+
+		@include breakpoint-down(mobile) {
+			justify-content: center;
+		}
+	}
 }

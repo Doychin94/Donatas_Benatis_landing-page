@@ -6,6 +6,10 @@
 	font-size: 1.8rem;
 	line-height: 1.444;
 
+	@include breakpoint-down(mobile) {
+		font-size: 1.5rem;
+	}
+
 	a {
 		transition: color var(--t-duration) ease-in-out;
 

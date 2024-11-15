@@ -11,9 +11,24 @@
 	font-size: 2rem;
 	line-height: 1.4;
 
+	@include breakpoint-down(mobile) {
+		font-size: 1.6rem;
+		gap: 1.2rem;
+	}
+
 	li {
 		display: flex;
 		align-items: center;
 		gap: 2.4rem;
+
+		@include breakpoint-down(mobile) {
+			gap: 1.2rem;
+		}
+	}
+
+	li img {
+		@include breakpoint-down(mobile) {
+			width: 1.8rem;
+		}
 	}
 }

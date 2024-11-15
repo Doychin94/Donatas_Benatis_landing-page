@@ -7,11 +7,19 @@
 	position: relative;
 	isolation: isolate;
 
+	@include breakpoint-down(mobile) {
+		padding: 7.2rem 0 2rem;
+	}
+
 	.section__decoration {
 		position: absolute;
 		right: 0;
 		top: 7rem;
 		z-index: -1;
+
+		@include breakpoint-down(mobile) {
+			top: -7rem;
+		}
 	}
 
 	.section__inner {
@@ -22,7 +30,7 @@
 
 		@include breakpoint-down(tablet) {
 			flex-direction: column-reverse;
-			gap: 5rem;
+			gap: 4.8rem;
 		}
 	}
 
@@ -49,6 +57,12 @@
 			max-width: 100%;
 			flex: auto;
 			margin-left: 14vw;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+			max-width: 60rem;
+			margin: 0 auto;
 		}
 	}
 
@@ -96,6 +110,26 @@
 		@include breakpoint-down(tablet) {
 			max-width: 100%;
 			justify-content: center;
+		}
+
+		@include breakpoint-down(mobile) {
+			position: relative;
+		}
+	}
+
+	.section__intro h4 {
+		@include breakpoint-down(mobile-medium) {
+			padding: 0 4.5rem;
+		}
+	}
+
+	.section__intro img {
+		@include breakpoint-down(mobile) {
+			position: absolute;
+			top: 50%;
+			left: -2rem;
+			transform: translateY(-50%);
+			width: 6.4rem;
 		}
 	}
 
@@ -147,6 +181,10 @@
 	.section__btn {
 		@include breakpoint-down(small-desktop) {
 			min-width: 29.2rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			min-width: none;
 		}
 	}
 }

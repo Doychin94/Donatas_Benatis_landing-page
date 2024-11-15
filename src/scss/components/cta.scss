@@ -24,6 +24,11 @@
 		text-align: center;
 	}
 
+	@include breakpoint-down(mobile) {
+		font-size: 1.6rem;
+		line-height: 1.5;
+	}
+
 	h3 {
 		@include breakpoint-down(tablet) {
 			margin-bottom: 0;
@@ -52,6 +57,11 @@
 			top: unset;
 			bottom: -22rem;
 			object-fit: contain;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 100%;
+			bottom: -13rem;
 		}
 	}
 
@@ -94,6 +104,12 @@
 		@include breakpoint-down(tablet) {
 			text-wrap: balance;
 			max-width: 100%;
+		}
+	}
+
+	h3 {
+		@include breakpoint-down(mobile) {
+			padding: 0 2rem;
 		}
 	}
 

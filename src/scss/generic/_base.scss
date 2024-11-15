@@ -14,6 +14,11 @@ body {
 	line-height: var(--lh-base);
 	color: var(--c-base);
 	background-color: var(--c-background);
+
+	@include breakpoint-down(tablet) {
+		font-size: 1.5rem;
+		line-height: 1.466;
+	}
 }
 
 a {
@@ -54,18 +59,33 @@ h6 {
 h1 {
 	font-size: 6.4rem;
 	line-height: 1.125;
+
+	@include breakpoint-down(mobile) {
+		font-size: 4rem;
+		line-height: 1.2;
+	}
 }
 
 .level-2,
 h2 {
 	font-size: 4.8rem;
 	line-height: 1.16;
+
+	@include breakpoint-down(mobile) {
+		font-size: 2.8rem;
+		line-height: 1.285;
+	}
 }
 
 .level-3,
 h3 {
 	font-size: 4rem;
 	line-height: 1.2;
+
+	@include breakpoint-down(mobile) {
+		font-size: 2.4rem;
+		line-height: 1.2;
+	}
 }
 
 .level-4,

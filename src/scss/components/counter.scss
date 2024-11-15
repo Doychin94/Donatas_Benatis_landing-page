@@ -30,6 +30,10 @@
 			right: 0;
 			transform: rotate(102deg) rotateY(175deg);
 		}
+
+		@include breakpoint-down(mobile) {
+			display: none;
+		}
 	}
 
 	.counter__aside h4 {
