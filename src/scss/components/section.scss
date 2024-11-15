@@ -19,6 +19,11 @@
 		align-items: center;
 		gap: 2rem;
 		justify-content: space-between;
+
+		@include breakpoint-down(tablet) {
+			flex-direction: column-reverse;
+			gap: 5rem;
+		}
 	}
 
 	.section__image {
@@ -38,6 +43,12 @@
 		@include breakpoint-down(small-desktop) {
 			flex: 0 0 50rem;
 			max-width: 50rem;
+		}
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			flex: auto;
+			margin-left: 14vw;
 		}
 	}
 
@@ -61,6 +72,13 @@
 		@include breakpoint-down(small-desktop) {
 			margin-top: 0;
 		}
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			flex: auto;
+			text-align: center;
+			text-wrap: balance;
+		}
 	}
 
 	h2 {
@@ -74,6 +92,11 @@
 		gap: 1.6rem;
 		max-width: 30.9rem;
 		margin-bottom: 1.2rem;
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			justify-content: center;
+		}
 	}
 
 	.section__entry:not(:last-child) {
@@ -88,6 +111,10 @@
 		display: flex;
 		align-items: center;
 		gap: 3.2rem;
+
+		@include breakpoint-down(tablet) {
+			flex-direction: column-reverse;
+		}
 	}
 
 	.section__actions strong {
@@ -99,10 +126,22 @@
 		position: relative;
 	}
 
+	.section__actions strong br {
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
+	}
+
 	.section__actions strong img {
 		position: absolute;
 		right: 13.3rem;
 		top: calc(100% + 2.5rem);
+
+		@include breakpoint-down(tablet) {
+			right: -12rem;
+			top: calc(100%);
+			transform: rotate(102deg) rotateY(175deg) rotateX(180deg);
+		}
 	}
 
 	.section__btn {
@@ -116,6 +155,10 @@
 .section--adjust {
 	padding: 2rem 0 12rem;
 
+	@include breakpoint-down(tablet) {
+		padding: 2rem 0 6rem;
+	}
+
 	.section__decoration {
 		top: unset;
 		right: unset;
@@ -125,6 +168,10 @@
 
 	.section__inner {
 		margin-bottom: 5.4rem;
+
+		@include breakpoint-down(tablet) {
+			flex-direction: column;
+		}
 	}
 
 	.section__image {
@@ -132,6 +179,10 @@
 		flex: 0 0 58.4rem;
 		max-width: 58.4rem;
 		margin: 0;
+
+		@include breakpoint-down(tablet) {
+			flex: auto;
+		}
 	}
 
 	.section__content {
@@ -140,6 +191,11 @@
 		text-wrap: balance;
 		font-size: 1.8rem;
 		line-height: 1.44;
+
+		@include breakpoint-down(tablet) {
+			max-width: 100%;
+			margin-top: 0;
+		}
 	}
 
 	h2 {

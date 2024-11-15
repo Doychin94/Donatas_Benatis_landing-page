@@ -7,4 +7,8 @@
 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 2.6rem;
 	align-items: flex-start;
+
+	@include breakpoint-down(tablet) {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }

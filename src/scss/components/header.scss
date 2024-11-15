@@ -8,4 +8,8 @@
 	left: 0;
 	width: 100%;
 	padding: 3.2rem 0 0;
+
+	@include breakpoint-down(tablet) {
+		text-align: center;
+	}
 }

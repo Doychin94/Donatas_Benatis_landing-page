@@ -15,6 +15,20 @@
 	font-size: 2rem;
 	line-height: 1.4;
 	isolation: isolate;
+	overflow: hidden;
+
+	@include breakpoint-down(tablet) {
+		padding: 5rem 2rem;
+		flex-direction: column;
+		gap: 1rem;
+		text-align: center;
+	}
+
+	h3 {
+		@include breakpoint-down(tablet) {
+			margin-bottom: 0;
+		}
+	}
 
 	.cta__decoration {
 		position: absolute;
@@ -23,21 +37,73 @@
 		height: 100%;
 		transform: translateX(-50%);
 		z-index: -1;
+
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
+	}
+
+	// .cta__decoration--mobile
+	.cta__decoration--mobile {
+		display: none;
+
+		@include breakpoint-down(tablet) {
+			display: block;
+			top: unset;
+			bottom: -22rem;
+			object-fit: contain;
+		}
 	}
 
 	.cta__content {
 		width: 100%;
 		max-width: 58.2rem;
+
+		@include breakpoint-down(tablet) {
+			text-wrap: balance;
+			text-align: center;
+			max-width: 100%;
+			position: relative;
+		}
+	}
+
+	.cta__content-decoration {
+		display: none;
+
+		@include breakpoint-down(tablet) {
+			display: block;
+			position: absolute;
+			top: 50%;
+			left: -2.8rem;
+			transform: translateY(-50%);
+		}
+	}
+
+	// .cta__content-decoration--adjust
+	.cta__content-decoration--adjust {
+		@include breakpoint-down(tablet) {
+			left: unset;
+			right: -2.8rem;
+		}
 	}
 
 	.cta__aside {
 		width: 100%;
 		max-width: 44rem;
+
+		@include breakpoint-down(tablet) {
+			text-wrap: balance;
+			max-width: 100%;
+		}
 	}
 
 	h3 img {
 		display: inline-block;
 		margin-right: 1rem;
+
+		@include breakpoint-down(tablet) {
+			display: none;
+		}
 	}
 
 	.cta__entry {

@@ -8,7 +8,7 @@
 	line-height: 1.4;
 
 	@include breakpoint-down(tablet) {
-		padding: 6rem 0 2rem;
+		padding: 12rem 0 2rem;
 	}
 
 	.hero__background {
@@ -56,7 +56,7 @@
 			max-width: 100%;
 			padding: 0;
 			text-align: center;
-			margin-bottom: 4rem;
+			margin-bottom: 7rem;
 		}
 	}
 
@@ -101,6 +101,12 @@
 		margin-bottom: 5.6rem;
 	}
 
+	.hero__counter {
+		@include breakpoint-down(tablet) {
+			display: inline-flex;
+		}
+	}
+
 	.hero__image {
 		width: 100%;
 		max-width: 50rem;
@@ -110,8 +116,11 @@
 			margin-right: 0;
 		}
 
-		@include breakpoint-down(small-desktop) {
-			// max-width: 40rem;
+		@include breakpoint-down(tablet) {
+			margin: 0 auto;
+			position: relative;
+			left: -4rem;
+			z-index: -1;
 		}
 	}
 
@@ -123,6 +132,10 @@
 		@include breakpoint-down(small-desktop) {
 			height: 100%;
 			object-fit: fill;
+		}
+
+		@include breakpoint-down(tablet) {
+			height: auto;
 		}
 	}
 }

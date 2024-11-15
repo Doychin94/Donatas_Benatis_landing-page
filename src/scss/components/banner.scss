@@ -20,6 +20,12 @@
 		padding: 6.4rem 5rem 7.4rem;
 	}
 
+	@include breakpoint-down(tablet) {
+		flex-direction: column;
+		padding: 5rem 3rem 6rem;
+		gap: 4rem;
+	}
+
 	.banner__decoration {
 		position: absolute;
 		left: 0;
@@ -32,12 +38,27 @@
 		top: unset;
 		left: 39.3%;
 		bottom: -2.5rem;
+
+		@include breakpoint-down(tablet) {
+			left: unset;
+			right: -1rem;
+			bottom: 50%;
+			transform: translateY(50%);
+			width: 8rem;
+		}
 	}
 
 	// .banner__decoration centered
 	.banner__decoration--centered {
 		top: -7rem;
 		left: 46.8%;
+
+		@include breakpoint-down(tablet) {
+			left: 0;
+			top: unset;
+			bottom: 0;
+			width: 14rem;
+		}
 	}
 
 	// .banner__decoration right
@@ -61,6 +82,10 @@
 		align-items: center;
 		gap: 2.4rem;
 		margin-top: -1.4rem;
+
+		@include breakpoint-down(tablet) {
+			margin-top: 0;
+		}
 	}
 
 	.banner__price {

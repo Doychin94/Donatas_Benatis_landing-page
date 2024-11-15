@@ -9,16 +9,27 @@
 
 	@include breakpoint-down(tablet) {
 		flex-direction: column-reverse;
+		position: relative;
 	}
 
 	.counter__aside {
 		position: relative;
+
+		@include breakpoint-down(tablet) {
+			position: static;
+		}
 	}
 
-	.counter__aside img {
+	.counter__aside > img {
 		position: absolute;
 		top: -7.8rem;
 		right: 10.2rem;
+
+		@include breakpoint-down(tablet) {
+			top: calc(100% + 4rem);
+			right: 0;
+			transform: rotate(102deg) rotateY(175deg);
+		}
 	}
 
 	.counter__aside h4 {
@@ -26,6 +37,12 @@
 
 		@include breakpoint-down(small-desktop) {
 			display: inline;
+		}
+	}
+
+	.counter__aside h4 br {
+		@include breakpoint-down(tablet) {
+			display: none;
 		}
 	}
 
