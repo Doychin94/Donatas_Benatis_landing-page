@@ -1,0 +1,35 @@
+/* ------------------------------------------------------------ *\
+	testimonial
+\* ------------------------------------------------------------ */
+
+.testimonial {
+	font-size: 1.5rem;
+	line-height: 1.466;
+	background-color: var(--c-background-secondary);
+	border-radius: 2.4rem;
+	border: 0.1rem solid #ffffff33;
+	padding: 2.4rem 3.2rem;
+	color: var(--c-white);
+	font-weight: 500;
+
+	.testimonial__bar {
+		display: flex;
+		align-items: center;
+		gap: 2rem;
+		margin-bottom: 2.8rem;
+	}
+
+	.testimonial__bar-content {
+		font-size: 1.4rem;
+		color: var(--c-base);
+		font-weight: 400;
+	}
+
+	.testimonial__bar strong {
+		display: block;
+		font-size: 2rem;
+		line-height: 1.4;
+		margin-bottom: 0.6rem;
+		color: var(--c-white);
+	}
+}
