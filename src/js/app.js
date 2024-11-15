@@ -7,3 +7,4 @@ import '/scss/style.scss';
  * Modules
  */
 import './modules/videos';
+import './modules/popup';

@@ -1,0 +1,16 @@
+/* ------------------------------------------------------------ *\
+	copyright
+\* ------------------------------------------------------------ */
+
+.copyright {
+	font-size: 1.8rem;
+	line-height: 1.444;
+
+	a {
+		transition: color var(--t-duration) ease-in-out;
+
+		&:hover {
+			color: var(--c-green);
+		}
+	}
+}

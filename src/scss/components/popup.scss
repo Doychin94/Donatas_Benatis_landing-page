@@ -1,0 +1,37 @@
+/* ------------------------------------------------------------ *\
+	popup
+\* ------------------------------------------------------------ */
+
+.popup {
+	pointer-events: none;
+
+	.popup__inner {
+		pointer-events: all;
+		max-width: 43rem;
+		margin: 0 auto;
+		position: relative;
+		opacity: 0;
+		transform: translateY(2rem);
+		transition:
+			opacity var(--t-duration),
+			transform var(--t-duration) ease-in-out;
+		transition-delay: 0.2s;
+	}
+
+	.mfp-close {
+		position: absolute;
+		top: 0.5rem;
+		right: 0.5rem;
+		font-size: 1.6rem;
+		border: none;
+		opacity: 1;
+		background-color: transparent;
+		color: var(--c-white);
+	}
+
+	// is active
+	&.is-active .popup__inner {
+		opacity: 1;
+		transform: none;
+	}
+}
