@@ -9,7 +9,7 @@
 	overflow: hidden;
 
 	@include breakpoint-down(tablet) {
-		padding: 12rem 0 2rem;
+		padding: 11.4rem 0 2rem;
 	}
 
 	@include breakpoint-down(mobile) {
@@ -83,7 +83,7 @@
 
 		@include breakpoint-down(mobile-medium) {
 			max-width: 44.3rem;
-			margin: 0 auto 2rem;
+			margin: 0 auto 1.3rem;
 		}
 	}
 
@@ -96,7 +96,7 @@
 		}
 	}
 
-	h1 img {
+	h1 span img {
 		position: absolute;
 		right: 2.6rem;
 		top: calc(100% - 3.4rem);
@@ -108,10 +108,39 @@
 			width: 10rem;
 		}
 
+		@include breakpoint-down(mobile) {
+			top: calc(100% - 2.5rem);
+		}
+
 		@include breakpoint-down(mobile-medium) {
 			width: 8.5rem;
 			top: calc(100% - 11.4rem);
 			right: 3rem;
+			display: none;
+		}
+	}
+
+	h1 .hero__label-mobile {
+		position: relative;
+		isolation: isolate;
+
+		@include breakpoint-down(mobile-medium) {
+			display: inline-block;
+		}
+	}
+
+	h1 .hero__label-mobile img {
+		position: absolute;
+		right: 2.6rem;
+		top: calc(100% - 3.4rem);
+		z-index: -1;
+		display: none;
+
+		@include breakpoint-down(mobile-medium) {
+			display: block;
+			width: 8.5rem;
+			top: -2rem;
+			right: -1rem;
 		}
 	}
 
@@ -122,8 +151,7 @@
 
 		@include breakpoint-down(tablet) {
 			max-width: 80%;
-			margin: 0 auto 3.2rem;
-			// text-wrap: balance;
+			margin: 0 auto 2.8rem;
 		}
 	}
 
@@ -131,7 +159,7 @@
 		margin-bottom: 5.6rem;
 
 		@include breakpoint-down(mobile) {
-			margin-bottom: 5.3rem;
+			margin-bottom: 4.3rem;
 		}
 	}
 

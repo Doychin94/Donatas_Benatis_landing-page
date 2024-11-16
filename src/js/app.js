@@ -8,3 +8,4 @@ import '/scss/style.scss';
  */
 import './modules/videos';
 import './modules/popup';
+import './modules/counter';

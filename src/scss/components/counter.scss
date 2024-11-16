@@ -12,6 +12,10 @@
 		position: relative;
 	}
 
+	@include breakpoint-down(mobile) {
+		gap: 2rem;
+	}
+
 	.counter__aside {
 		position: relative;
 

@@ -12,7 +12,7 @@
 	background-color: #ffffff0a;
 
 	@include breakpoint-down(mobile) {
-		padding: 2rem 2.4rem;
+		padding: 2rem 2.4rem 2.5rem;
 	}
 
 	.box__image {
@@ -21,6 +21,12 @@
 
 		@include breakpoint-down(mobile) {
 			margin-bottom: 0;
+		}
+	}
+
+	h4 {
+		@include breakpoint-down(mobile) {
+			font-size: 2rem;
 		}
 	}
 
@@ -36,6 +42,8 @@
 
 		@include breakpoint-down(mobile) {
 			display: flex;
+			gap: 2rem;
+			margin-bottom: 1.2rem;
 		}
 	}
 }
@@ -58,6 +66,7 @@
 
 		@include breakpoint-down(mobile) {
 			justify-content: center;
+			margin-bottom: 1.6rem;
 		}
 	}
 }

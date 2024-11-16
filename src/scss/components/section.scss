@@ -129,7 +129,7 @@
 		@include breakpoint-down(mobile) {
 			position: absolute;
 			top: 50%;
-			left: -2rem;
+			left: -4rem;
 			transform: translateY(-50%);
 			width: 6.4rem;
 		}
@@ -150,6 +150,7 @@
 
 		@include breakpoint-down(tablet) {
 			flex-direction: column-reverse;
+			gap: 1.4rem;
 		}
 	}
 
@@ -180,8 +181,15 @@
 		}
 
 		@include breakpoint-down(mobile-medium) {
-			right: -6rem;
+			right: -7rem;
+			top: calc(100% - 1rem);
+			width: 5rem;
+		}
+
+		@include breakpoint-down(mobile-small) {
 			width: 4rem;
+			right: -4rem;
+			top: calc(100% - 2rem);
 		}
 	}
 
@@ -201,7 +209,7 @@
 	padding: 2rem 0 12rem;
 
 	@include breakpoint-down(tablet) {
-		padding: 2rem 0 6rem;
+		padding: 2rem 0 7.6rem;
 	}
 
 	.section__decoration {
@@ -231,6 +239,10 @@
 
 		@include breakpoint-down(tablet) {
 			flex-direction: column;
+		}
+
+		@include breakpoint-down(mobile) {
+			margin-bottom: 3.9rem;
 		}
 	}
 
@@ -264,6 +276,14 @@
 
 	h2 {
 		margin-bottom: 0;
+
+		@include breakpoint-down(mobile) {
+			font-size: 4rem;
+		}
+
+		@include breakpoint-down(mobile-small) {
+			font-size: 3.2rem;
+		}
 	}
 
 	.section__intro {

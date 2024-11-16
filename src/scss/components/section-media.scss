@@ -7,6 +7,10 @@
 	overflow: hidden;
 	position: relative;
 
+	@include breakpoint-down(mobile) {
+		padding: 3.7rem 0 0;
+	}
+
 	.section__inner {
 		max-width: 92rem;
 		margin: 0 auto;
@@ -38,6 +42,12 @@
 		@include breakpoint-down(mobile) {
 			width: 28rem;
 			right: calc(100% - 16rem);
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			width: 22rem;
+			top: -35%;
+			right: calc(100% - 12rem);
 		}
 	}
 
@@ -72,6 +82,11 @@
 		@include breakpoint-down(mobile) {
 			width: 16rem;
 			left: calc(100% - 12rem);
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			width: 12rem;
+			left: calc(100% - 9rem);
 		}
 	}
 

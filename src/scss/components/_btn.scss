@@ -19,6 +19,10 @@
 	border-radius: 3.2rem;
 	transition: background-color var(--t-duration) ease-in-out;
 
+	@include breakpoint-down(mobile) {
+		font-size: 1.6rem;
+	}
+
 	&:hover {
 		background-color: var(--c-yellow);
 	}
