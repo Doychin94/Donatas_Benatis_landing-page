@@ -34,6 +34,11 @@
 			right: calc(100% - 22rem);
 			width: 34rem;
 		}
+
+		@include breakpoint-down(mobile) {
+			width: 28rem;
+			right: calc(100% - 16rem);
+		}
 	}
 
 	.section__decoration--adjust {
@@ -62,6 +67,11 @@
 			top: -30%;
 			left: calc(100% - 15rem);
 			width: 22rem;
+		}
+
+		@include breakpoint-down(mobile) {
+			width: 16rem;
+			left: calc(100% - 12rem);
 		}
 	}
 

@@ -60,6 +60,14 @@
 		&:hover {
 			opacity: 0.9;
 		}
+
+		@include breakpoint-down(mobile) {
+			width: 7.3rem;
+		}
+
+		@include breakpoint-down(mobile-medium) {
+			width: 5.3rem;
+		}
 	}
 
 	// is playing

@@ -6,6 +6,7 @@
 	padding: 2rem 0;
 	position: relative;
 	isolation: isolate;
+	overflow: hidden;
 
 	@include breakpoint-down(mobile) {
 		padding: 7.2rem 0 2rem;
@@ -63,10 +64,11 @@
 			width: 100%;
 			max-width: 60rem;
 			margin: 0 auto;
+			position: relative;
 		}
 	}
 
-	.section__image img {
+	.section__image picture img {
 		width: 100%;
 		height: auto;
 		object-fit: cover;
@@ -176,6 +178,11 @@
 			top: calc(100%);
 			transform: rotate(102deg) rotateY(175deg) rotateX(180deg);
 		}
+
+		@include breakpoint-down(mobile-medium) {
+			right: -6rem;
+			width: 4rem;
+		}
 	}
 
 	.section__btn {
@@ -202,6 +209,21 @@
 		right: unset;
 		bottom: 0;
 		left: 0;
+
+		@include breakpoint-down(mobile-medium) {
+			display: none;
+		}
+	}
+
+	// .section__decoration mobile
+	.section__decoration--mobile {
+		display: none;
+
+		@include breakpoint-down(mobile-medium) {
+			display: block;
+			left: -2rem;
+			bottom: -10rem;
+		}
 	}
 
 	.section__inner {
@@ -220,6 +242,10 @@
 
 		@include breakpoint-down(tablet) {
 			flex: auto;
+		}
+
+		@include breakpoint-down(mobile) {
+			position: relative;
 		}
 	}
 
